@@ -1,0 +1,17 @@
+V3 23
+FL "U:/ECE 241/lab8/netgen/par/schem_timesim.vhd" 2017/03/21.12:09:00 J.40
+AR work/schem/Structure -1 FL "U:/ECE 241/lab8/netgen/par/schem_timesim.vhd" \
+      EN work/schem 1490124453 CP X_OBUF CP X_ZERO CP X_BUF CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab8/schem.vhf" 2017/03/21.12:27:32 J.40
+EN work/schem 1490124453 FL "U:/ECE 241/lab8/schem.vhf" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/NUMERIC_STD 1194562368 LB UNISIM PH unisim/VCOMPONENTS 1194562990
+AR work/schem/BEHAVIORAL 1490124454 \
+      FL "U:/ECE 241/lab8/schem.vhf" EN work/schem 1490124453 CP FDR CP INV CP OR2 \
+      CP OR3 CP OR5 CP AND3 CP AND2 CP AND4
+FL "U:/ECE 241/lab8/tb.vhw" 2017/03/21.12:27:31 J.40
+EN work/tb 1490124455 FL "U:/ECE 241/lab8/tb.vhw" LB UNISIM PH unisim/VCOMPONENTS 1194562990 \
+      PB ieee/std_logic_1164 1194562354 PB ieee/NUMERIC_STD 1194562368 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362 PB std/textio 1194562348
+AR work/tb/testbench_arch 1490124456 \
+      FL "U:/ECE 241/lab8/tb.vhw" EN work/tb 1490124455 CP schem

@@ -1,0 +1,8 @@
+//! **************************************************************************
+// Written by: Map J.40 on Tue Feb 21 11:42:13 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Cout" LOCATE = SITE "G1" LEVEL 1;
+COMP "Cin" LOCATE = SITE "N3" LEVEL 1;
+SCHEMATIC END;

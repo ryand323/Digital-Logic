@@ -1,0 +1,36 @@
+ command line:
+   ./tbench3_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/schematic_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53721
+
+Tue Apr 04 13:31:04 2017
+
+Total Line Count : 119
+
+ Elaboration time : 0.0312 sec.
+
+ Estimate current memory usage : 155.505 Meg. 
+
+ Total Signals          : 204
+ Total Nets             : 141
+ Total Signal Drivers   : 103
+ Total Blocks           : 55
+ Total Primitive Blocks : 22
+ Total Processes        : 103
+ Total Traceable Variables  : 218
+ Total Scalar Nets and Variables : 644
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.1092 sec.
+
+ Estimate current memory usage : 164.68 Meg. 
+
+Tue Apr 04 13:31:44 2017
+

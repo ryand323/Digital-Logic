@@ -1,0 +1,3 @@
+MODULE tbench3
+SUBMODULE schematic
+INSTANCE UUT

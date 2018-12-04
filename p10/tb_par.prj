@@ -1,0 +1,2 @@
+vhdl work "netgen/par/lights_timesim.vhd"
+vhdl work "tb.vhw"

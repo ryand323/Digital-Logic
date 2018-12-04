@@ -1,0 +1,19 @@
+Release 9.2.04i - netgen J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm schem -w -dir
+netgen/synthesis -ofmt vhdl -sim schem.ngc schem_synthesis.vhd  
+
+Reading design 'schem.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist '\\users.uidaho.edu\users\d\dona1865\ECE
+241\lab1.1\lab1.1\netgen\synthesis\schem_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 105936 kilobytes

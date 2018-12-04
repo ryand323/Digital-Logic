@@ -1,0 +1,20 @@
+V3 26
+FL "U:/ECE 241/moore/mealy.vhf" 2017/04/04.12:55:46 J.40
+AR work/mealy/BEHAVIORAL -1 FL "U:/ECE 241/moore/mealy.vhf" EN work/mealy 1491336190 \
+      CP FDR CP INV CP AND3 CP AND2 CP OR2
+FL "U:/ECE 241/moore/netgen/par/mealy_timesim.vhd" 2017/04/04.13:03:08 J.40
+EN work/mealy 1491336190 FL "U:/ECE 241/moore/netgen/par/mealy_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/mealy/Structure 1491336191 \
+      FL "U:/ECE 241/moore/netgen/par/mealy_timesim.vhd" EN work/mealy 1491336190 \
+      CP X_OBUF CP X_BUF CP X_BUFGMUX CP X_INV CP X_LUT4 CP X_SFF CP X_ZERO CP X_ONE \
+      CP X_ROC CP X_TOC
+FL "U:/ECE 241/moore/tbtestmoo.vhw" 2017/04/04.13:02:32 J.40
+EN work/tbtestmoo 1491336192 FL "U:/ECE 241/moore/tbtestmoo.vhw" LB UNISIM \
+      PH unisim/VCOMPONENTS 1194562990 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/NUMERIC_STD 1194562368 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/tbtestmoo/testbench_arch 1491336193 \
+      FL "U:/ECE 241/moore/tbtestmoo.vhw" EN work/tbtestmoo 1491336192 CP mealy

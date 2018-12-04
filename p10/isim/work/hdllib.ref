@@ -1,0 +1,5 @@
+AR lights behavioral "U:/ECE 241/lab10/lights.vhd" sub00/vhpl01 1491939984
+AR tb testbench_arch "U:/ECE 241/lab10/tb.vhw" sub00/vhpl03 1491940016
+EN tb NULL "U:/ECE 241/lab10/tb.vhw" sub00/vhpl02 1491940015
+EN lights NULL "U:/ECE 241/lab10/netgen/par/lights_timesim.vhd" sub00/vhpl00 1491940013
+AR lights structure "U:/ECE 241/lab10/netgen/par/lights_timesim.vhd" sub00/vhpl04 1491940014

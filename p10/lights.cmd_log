@@ -1,0 +1,13 @@
+xst -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -ifn lights.xst -ofn lights.syr
+ngdbuild -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "lights.ngc" lights.ngd
+ngdbuild -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lights.ucf" -p xc3s100e-cp132-5 "lights.ngc" lights.ngd
+map -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o lights_map.ncd lights.ngd lights.pcf
+par -ise "U:/ECE 241/lab10/lab10.ise" -w -intstyle ise -ol std -t 1 lights_map.ncd lights.ncd lights.pcf
+trce -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -e 3 -s 5 -xml lights lights.ncd -o lights.twr lights.pcf -ucf lights.ucf
+bitgen -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -f lights.ut lights.ncd
+xst -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -ifn lights.xst -ofn lights.syr
+ngdbuild -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lights.ucf" -p xc3s100e-cp132-5 "lights.ngc" lights.ngd
+map -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o lights_map.ncd lights.ngd lights.pcf
+par -ise "U:/ECE 241/lab10/lab10.ise" -w -intstyle ise -ol std -t 1 lights_map.ncd lights.ncd lights.pcf
+trce -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -e 3 -s 5 -xml lights lights.ncd -o lights.twr lights.pcf -ucf lights.ucf
+netgen -ise "U:/ECE 241/lab10/lab10.ise" -intstyle ise -s 5 -pcf lights.pcf -rpw 100 -tpw 0 -ar Structure -tm lights -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim lights.ncd lights_timesim.vhd

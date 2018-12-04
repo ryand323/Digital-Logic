@@ -1,0 +1,42 @@
+ command line:
+   ./tb_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/adder_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  52189
+
+Tue Feb 28 13:20:01 2017
+
+Total Line Count : 103
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 154.481 Meg. 
+
+ Total Signals          : 127
+ Total Nets             : 74
+ Total Signal Drivers   : 56
+ Total Blocks           : 48
+ Total Primitive Blocks : 20
+ Total Processes        : 53
+ Total Traceable Variables  : 130
+ Total Scalar Nets and Variables : 429
+ntrace select -o on -n /tb/a1 
+ntrace select -o on -n /tb/a0 
+ntrace select -o on -n /tb/b1 
+ntrace select -o on -n /tb/b0 
+ntrace select -o on -n /tb/s1 
+ntrace select -o on -n /tb/s0 
+ntrace select -o on -n /tb/cout 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0468 sec.
+
+ Estimate current memory usage : 163.656 Meg. 
+
+Tue Feb 28 13:20:52 2017
+

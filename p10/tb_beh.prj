@@ -1,0 +1,2 @@
+vhdl work "lights.vhd"
+vhdl work "tb.vhw"

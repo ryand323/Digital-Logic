@@ -1,0 +1,3 @@
+verilog work "netgen/par/schem_timesim.v"
+verilog work "tb.tfw"
+verilog work "C:/Xilinx/92i/verilog/src/glbl.v"

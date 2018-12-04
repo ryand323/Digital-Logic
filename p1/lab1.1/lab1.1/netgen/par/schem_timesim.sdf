@@ -1,0 +1,36 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "schem")
+  (DATE "Tue Jan 17 13:03:36 2017")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "J.40")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE my_out_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2640 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE my_in_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 87 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_INV")
+    (INSTANCE my_out_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1799 ))
+        )
+      )
+  )
+)

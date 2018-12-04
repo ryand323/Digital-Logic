@@ -1,0 +1,17 @@
+AR tb0010 testbench_arch "U:/ECE 241/lab13/tb0010.vhw" sub00/vhpl10 1493155084
+AR tb2 testbench_arch "U:/ECE 241/lab13/tb2.vhw" sub00/vhpl06 1493154477
+AR tb0101 testbench_arch "U:/ECE 241/lab13/tb0101.vhw" sub00/vhpl16 1493155531
+AR alu behavioral "U:/ECE 241/lab13/top.vhd" sub00/vhpl01 1493153903
+EN tb0001 NULL "U:/ECE 241/lab13/tb0001.vhw" sub00/vhpl07 1493154883
+AR alu structure "U:/ECE 241/lab13/netgen/par/alu_timesim.vhd" sub00/vhpl04 1493154475
+EN tb0010 NULL "U:/ECE 241/lab13/tb0010.vhw" sub00/vhpl09 1493155083
+EN tb0011 NULL "U:/ECE 241/lab13/tb0011.vhw" sub00/vhpl11 1493155286
+AR tb0001 testbench_arch "U:/ECE 241/lab13/tb0001.vhw" sub00/vhpl08 1493154884
+EN tb NULL "U:/ECE 241/lab13/tb.vhw" sub00/vhpl02 1493154103
+AR tb testbench_arch "U:/ECE 241/lab13/tb.vhw" sub00/vhpl03 1493154104
+EN tb0100 NULL "U:/ECE 241/lab13/tb0100.vhw" sub00/vhpl13 1493155428
+EN tb0101 NULL "U:/ECE 241/lab13/tb0101.vhw" sub00/vhpl15 1493155530
+AR tb0011 testbench_arch "U:/ECE 241/lab13/tb0011.vhw" sub00/vhpl12 1493155287
+AR tb0100 testbench_arch "U:/ECE 241/lab13/tb0100.vhw" sub00/vhpl14 1493155429
+EN tb2 NULL "U:/ECE 241/lab13/tb2.vhw" sub00/vhpl05 1493154476
+EN alu NULL "U:/ECE 241/lab13/netgen/par/alu_timesim.vhd" sub00/vhpl00 1493154474

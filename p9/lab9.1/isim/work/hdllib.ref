@@ -1,0 +1,6 @@
+EN ccounter NULL "U:/ECE 241/counter2/netgen/par/ccounter_timesim.vhd" sub00/vhpl00 1490731777
+AR ccounter structure "U:/ECE 241/counter2/netgen/par/ccounter_timesim.vhd" sub00/vhpl01 1490731778
+EN tbench NULL "U:/ECE 241/counter2/tbench.vhw" sub00/vhpl04 1490731870
+AR tb testbench_arch "U:/ECE 241/counter2/tb.vhw" sub00/vhpl03 1490731780
+EN tb NULL "U:/ECE 241/counter2/tb.vhw" sub00/vhpl02 1490731779
+AR tbench testbench_arch "U:/ECE 241/counter2/tbench.vhw" sub00/vhpl05 1490731871

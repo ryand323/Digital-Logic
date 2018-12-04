@@ -1,0 +1,17 @@
+V3 20
+FL "U:/ECE 241/lab10/lights.vhd" 2017/04/11.12:37:05 J.40
+AR work/lights/Behavioral -1 FL "U:/ECE 241/lab10/lights.vhd" EN work/lights 1491940013
+FL "U:/ECE 241/lab10/netgen/par/lights_timesim.vhd" 2017/04/11.12:44:05 J.40
+EN work/lights 1491940013 FL "U:/ECE 241/lab10/netgen/par/lights_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/lights/Structure 1491940014 \
+      FL "U:/ECE 241/lab10/netgen/par/lights_timesim.vhd" EN work/lights 1491940013 \
+      CP X_OBUF CP X_BUF CP X_BUFGMUX CP X_INV CP X_LUT4 CP X_SFF CP X_ONE CP X_ZERO \
+      CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab10/tb.vhw" 2017/04/11.12:46:13 J.40
+EN work/tb 1491940015 FL "U:/ECE 241/lab10/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 1491940016 \
+      FL "U:/ECE 241/lab10/tb.vhw" EN work/tb 1491940015 CP lights

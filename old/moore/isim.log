@@ -1,0 +1,36 @@
+ command line:
+   ./tbtestmoo_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/mealy_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53652
+
+Tue Apr 04 13:03:20 2017
+
+Total Line Count : 122
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 155.505 Meg. 
+
+ Total Signals          : 219
+ Total Nets             : 148
+ Total Signal Drivers   : 112
+ Total Blocks           : 60
+ Total Primitive Blocks : 26
+ Total Processes        : 113
+ Total Traceable Variables  : 234
+ Total Scalar Nets and Variables : 720
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0156 sec.
+
+ Estimate current memory usage : 164.68 Meg. 
+
+Tue Apr 04 13:04:59 2017
+

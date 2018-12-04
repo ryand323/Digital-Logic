@@ -1,0 +1,4 @@
+EN adder NULL "U:/ECE 241/lab6/netgen/par/adder_timesim.vhd" sub00/vhpl00 1488316797
+EN tb NULL "U:/ECE 241/lab6/tb.vhw" sub00/vhpl02 1488316799
+AR tb testbench_arch "U:/ECE 241/lab6/tb.vhw" sub00/vhpl03 1488316800
+AR adder structure "U:/ECE 241/lab6/netgen/par/adder_timesim.vhd" sub00/vhpl01 1488316798

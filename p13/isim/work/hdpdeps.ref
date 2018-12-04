@@ -1,0 +1,53 @@
+V3 38
+FL "U:/ECE 241/lab13/netgen/par/alu_timesim.vhd" 2017/04/25.14:07:52 J.40
+EN work/alu 1493154474 FL "U:/ECE 241/lab13/netgen/par/alu_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/alu/Structure 1493154475 \
+      FL "U:/ECE 241/lab13/netgen/par/alu_timesim.vhd" EN work/alu 1493154474 \
+      CP X_OBUF CP X_BUF CP X_INV CP X_MUX2 CP X_LATCHE CP X_LUT4 CP X_ZERO CP X_ONE \
+      CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab13/tb.vhw" 2017/04/25.13:53:24 J.40
+EN work/tb 1493154103 FL "U:/ECE 241/lab13/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 1493154104 \
+      FL "U:/ECE 241/lab13/tb.vhw" EN work/tb 1493154103 CP alu
+FL "U:/ECE 241/lab13/tb0001.vhw" 2017/04/25.14:14:41 J.40
+EN work/tb0001 1493154883 FL "U:/ECE 241/lab13/tb0001.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb0001/testbench_arch 1493154884 \
+      FL "U:/ECE 241/lab13/tb0001.vhw" EN work/tb0001 1493154883 CP alu
+FL "U:/ECE 241/lab13/tb0010.vhw" 2017/04/25.14:17:55 J.40
+EN work/tb0010 1493155083 FL "U:/ECE 241/lab13/tb0010.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb0010/testbench_arch 1493155084 \
+      FL "U:/ECE 241/lab13/tb0010.vhw" EN work/tb0010 1493155083 CP alu
+FL "U:/ECE 241/lab13/tb0011.vhw" 2017/04/25.14:21:15 J.40
+EN work/tb0011 1493155286 FL "U:/ECE 241/lab13/tb0011.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb0011/testbench_arch 1493155287 \
+      FL "U:/ECE 241/lab13/tb0011.vhw" EN work/tb0011 1493155286 CP alu
+FL "U:/ECE 241/lab13/tb0100.vhw" 2017/04/25.14:23:34 J.40
+EN work/tb0100 1493155428 FL "U:/ECE 241/lab13/tb0100.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb0100/testbench_arch 1493155429 \
+      FL "U:/ECE 241/lab13/tb0100.vhw" EN work/tb0100 1493155428 CP alu
+FL "U:/ECE 241/lab13/tb0101.vhw" 2017/04/25.14:25:17 J.40
+EN work/tb0101 1493155530 FL "U:/ECE 241/lab13/tb0101.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb0101/testbench_arch 1493155531 \
+      FL "U:/ECE 241/lab13/tb0101.vhw" EN work/tb0101 1493155530 CP alu
+FL "U:/ECE 241/lab13/tb2.vhw" 2017/04/25.14:07:05 J.40
+EN work/tb2 1493154476 FL "U:/ECE 241/lab13/tb2.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb2/testbench_arch 1493154477 \
+      FL "U:/ECE 241/lab13/tb2.vhw" EN work/tb2 1493154476 CP alu
+FL "U:/ECE 241/lab13/top.vhd" 2017/04/25.13:58:05 J.40
+AR work/alu/Behavioral -1 FL "U:/ECE 241/lab13/top.vhd" EN work/alu 1493154474

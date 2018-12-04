@@ -1,0 +1,4 @@
+AR tb testbench_arch "U:/ECE 241/lab7/TB.vhw" sub00/vhpl03 1488919788
+EN tb NULL "U:/ECE 241/lab7/TB.vhw" sub00/vhpl02 1488919787
+AR comparator structure "U:/ECE 241/lab7/netgen/par/comparator_timesim.vhd" sub00/vhpl01 1488919786
+EN comparator NULL "U:/ECE 241/lab7/netgen/par/comparator_timesim.vhd" sub00/vhpl00 1488919785

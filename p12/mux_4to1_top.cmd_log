@@ -1,0 +1,1 @@
+xst -ise "U:/ECE 241/lab12/lab12.ise" -intstyle ise -ifn mux_4to1_top.xst -ofn mux_4to1_top.syr

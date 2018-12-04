@@ -1,0 +1,29 @@
+V3 29
+FL "U:/ECE 241/moorefsm/netgen/par/schematic_timesim.vhd" 2017/04/04.13:30:49 J.40
+EN work/schematic 1491337855 \
+      FL "U:/ECE 241/moorefsm/netgen/par/schematic_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/schematic/Structure 1491337856 \
+      FL "U:/ECE 241/moorefsm/netgen/par/schematic_timesim.vhd" EN work/schematic 1491337855 \
+      CP X_BUF CP X_OBUF CP X_BUFGMUX CP X_INV CP X_LUT4 CP X_SFF CP X_ONE CP X_ZERO \
+      CP X_ROC CP X_TOC
+FL "U:/ECE 241/moorefsm/schematic.vhf" 2017/04/04.13:27:58 J.40
+AR work/schematic/BEHAVIORAL -1 FL "U:/ECE 241/moorefsm/schematic.vhf" \
+      EN work/schematic 1491337855 CP FDR CP INV CP OR2 CP AND3 CP AND2
+FL "U:/ECE 241/moorefsm/tbench2.vhw" 2017/04/04.13:17:45 J.40
+EN work/tbench2 1491337086 FL "U:/ECE 241/moorefsm/tbench2.vhw" LB UNISIM \
+      PH unisim/VCOMPONENTS 1194562990 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/NUMERIC_STD 1194562368 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/tbench2/testbench_arch 1491337087 \
+      FL "U:/ECE 241/moorefsm/tbench2.vhw" EN work/tbench2 1491337086 CP schematic
+FL "U:/ECE 241/moorefsm/tbench3.vhw" 2017/04/04.13:20:53 J.40
+EN work/tbench3 1491337857 FL "U:/ECE 241/moorefsm/tbench3.vhw" LB UNISIM \
+      PH unisim/VCOMPONENTS 1194562990 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/NUMERIC_STD 1194562368 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/tbench3/testbench_arch 1491337858 \
+      FL "U:/ECE 241/moorefsm/tbench3.vhw" EN work/tbench3 1491337857 CP schematic

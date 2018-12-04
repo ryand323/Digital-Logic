@@ -1,0 +1,14 @@
+V3 14
+FL "U:/ECE 241/lab6/netgen/par/adder_timesim.vhd" 2017/02/28.13:19:49 J.40
+EN work/adder 1488316797 FL "U:/ECE 241/lab6/netgen/par/adder_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/adder/Structure 1488316798 \
+      FL "U:/ECE 241/lab6/netgen/par/adder_timesim.vhd" EN work/adder 1488316797 \
+      CP X_OBUF CP X_BUF CP X_LUT4 CP X_ONE CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab6/tb.vhw" 2017/02/28.13:11:19 J.40
+EN work/tb 1488316799 FL "U:/ECE 241/lab6/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 1488316800 \
+      FL "U:/ECE 241/lab6/tb.vhw" EN work/tb 1488316799 CP adder

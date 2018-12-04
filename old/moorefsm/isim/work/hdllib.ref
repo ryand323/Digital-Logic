@@ -1,0 +1,7 @@
+EN tbench2 NULL "U:/ECE 241/moorefsm/tbench2.vhw" sub00/vhpl02 1491337086
+EN tbench3 NULL "U:/ECE 241/moorefsm/tbench3.vhw" sub00/vhpl04 1491337857
+AR schematic behavioral "U:/ECE 241/moorefsm/schematic.vhf" sub00/vhpl01 1491337708
+EN schematic NULL "U:/ECE 241/moorefsm/netgen/par/schematic_timesim.vhd" sub00/vhpl00 1491337855
+AR tbench3 testbench_arch "U:/ECE 241/moorefsm/tbench3.vhw" sub00/vhpl05 1491337858
+AR schematic structure "U:/ECE 241/moorefsm/netgen/par/schematic_timesim.vhd" sub00/vhpl06 1491337856
+AR tbench2 testbench_arch "U:/ECE 241/moorefsm/tbench2.vhw" sub00/vhpl03 1491337087

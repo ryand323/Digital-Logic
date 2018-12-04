@@ -1,0 +1,191 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\92i\bin\nt\trce.exe -ise U:/ECE 241/lab13/lab13.ise -intstyle ise -e
+3 -s 5 -xml alu alu.ncd -o alu.twr alu.pcf
+
+Design file:              alu.ncd
+Physical constraint file: alu.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock controls<1>
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+controls<0> |    4.244(F)|   -0.926(F)|ccr_out_0_not0001 |   0.000|
+rega<0>     |    5.928(F)|   -1.619(F)|ccr_out_0_not0001 |   0.000|
+rega<1>     |    6.171(F)|   -1.331(F)|ccr_out_0_not0001 |   0.000|
+rega<2>     |    5.857(F)|   -1.573(F)|ccr_out_0_not0001 |   0.000|
+rega<3>     |    5.109(F)|   -1.096(F)|ccr_out_0_not0001 |   0.000|
+regb<0>     |    5.604(F)|   -1.698(F)|ccr_out_0_not0001 |   0.000|
+regb<1>     |    5.620(F)|   -2.009(F)|ccr_out_0_not0001 |   0.000|
+regb<2>     |    5.119(F)|   -1.712(F)|ccr_out_0_not0001 |   0.000|
+regb<3>     |    5.016(F)|   -0.926(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock controls<2>
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+controls<0> |    3.404(F)|    0.125(F)|ccr_out_0_not0001 |   0.000|
+rega<0>     |    5.088(F)|   -0.568(F)|ccr_out_0_not0001 |   0.000|
+rega<1>     |    5.331(F)|   -0.280(F)|ccr_out_0_not0001 |   0.000|
+rega<2>     |    5.017(F)|   -0.522(F)|ccr_out_0_not0001 |   0.000|
+rega<3>     |    4.269(F)|   -0.045(F)|ccr_out_0_not0001 |   0.000|
+regb<0>     |    4.764(F)|   -0.647(F)|ccr_out_0_not0001 |   0.000|
+regb<1>     |    4.780(F)|   -0.958(F)|ccr_out_0_not0001 |   0.000|
+regb<2>     |    4.279(F)|   -0.661(F)|ccr_out_0_not0001 |   0.000|
+regb<3>     |    4.176(F)|    0.125(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock controls<3>
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+controls<0> |    4.681(F)|   -1.472(F)|ccr_out_0_not0001 |   0.000|
+rega<0>     |    6.365(F)|   -2.165(F)|ccr_out_0_not0001 |   0.000|
+rega<1>     |    6.608(F)|   -1.877(F)|ccr_out_0_not0001 |   0.000|
+rega<2>     |    6.294(F)|   -2.119(F)|ccr_out_0_not0001 |   0.000|
+rega<3>     |    5.546(F)|   -1.642(F)|ccr_out_0_not0001 |   0.000|
+regb<0>     |    6.041(F)|   -2.244(F)|ccr_out_0_not0001 |   0.000|
+regb<1>     |    6.057(F)|   -2.555(F)|ccr_out_0_not0001 |   0.000|
+regb<2>     |    5.556(F)|   -2.258(F)|ccr_out_0_not0001 |   0.000|
+regb<3>     |    5.453(F)|   -1.472(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock controls<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ccr_out<0>  |    6.234(F)|ccr_out_0_not0001 |   0.000|
+ccr_out<2>  |    6.234(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock controls<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ccr_out<0>  |    7.285(F)|ccr_out_0_not0001 |   0.000|
+ccr_out<2>  |    7.285(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock controls<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ccr_out<0>  |    5.688(F)|ccr_out_0_not0001 |   0.000|
+ccr_out<2>  |    5.688(F)|ccr_out_0_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock controls<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+controls<1>    |         |         |    6.150|    6.150|
+controls<2>    |         |         |    5.561|    5.561|
+controls<3>    |         |         |    2.162|    2.162|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock controls<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+controls<1>    |         |         |    5.310|    5.310|
+controls<2>    |         |         |    4.721|    4.721|
+controls<3>    |         |         |    1.322|    1.322|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock controls<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+controls<1>    |         |         |    6.587|    6.587|
+controls<2>    |         |         |    5.998|    5.998|
+controls<3>    |         |         |    2.599|    2.599|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+controls<0>    |alu_out<0>     |    7.158|
+controls<0>    |alu_out<1>     |    8.809|
+controls<0>    |alu_out<2>     |    8.469|
+controls<0>    |alu_out<3>     |    7.826|
+controls<1>    |alu_out<0>     |    6.688|
+controls<1>    |alu_out<1>     |    9.221|
+controls<1>    |alu_out<2>     |    8.864|
+controls<1>    |alu_out<3>     |    8.443|
+controls<2>    |alu_out<0>     |    8.051|
+controls<2>    |alu_out<1>     |    9.622|
+controls<2>    |alu_out<2>     |    8.275|
+controls<2>    |alu_out<3>     |    7.854|
+controls<3>    |alu_out<0>     |    5.780|
+controls<3>    |alu_out<1>     |    7.115|
+controls<3>    |alu_out<2>     |    6.856|
+controls<3>    |alu_out<3>     |    6.866|
+rega<0>        |alu_out<0>     |    6.951|
+rega<0>        |alu_out<1>     |    9.449|
+rega<0>        |alu_out<2>     |    9.256|
+rega<0>        |alu_out<3>     |    9.784|
+rega<1>        |alu_out<1>     |    9.412|
+rega<1>        |alu_out<2>     |    9.542|
+rega<1>        |alu_out<3>     |    9.883|
+rega<2>        |alu_out<2>     |    8.171|
+rega<2>        |alu_out<3>     |    8.560|
+rega<3>        |alu_out<3>     |    8.158|
+regb<0>        |alu_out<0>     |    6.128|
+regb<0>        |alu_out<1>     |    9.307|
+regb<0>        |alu_out<2>     |    8.932|
+regb<0>        |alu_out<3>     |    9.460|
+regb<1>        |alu_out<1>     |    8.980|
+regb<1>        |alu_out<2>     |    8.991|
+regb<1>        |alu_out<3>     |    9.332|
+regb<2>        |alu_out<2>     |    8.052|
+regb<2>        |alu_out<3>     |    8.450|
+regb<3>        |alu_out<3>     |    7.684|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 25 14:07:49 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 124 MB
+
+
+

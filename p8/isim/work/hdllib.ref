@@ -1,0 +1,5 @@
+EN schem NULL "U:/ECE 241/lab8/schem.vhf" sub00/vhpl00 1490124453
+AR schem structure "U:/ECE 241/lab8/netgen/par/schem_timesim.vhd" sub00/vhpl01 1490123344
+AR tb testbench_arch "U:/ECE 241/lab8/tb.vhw" sub00/vhpl03 1490124456
+EN tb NULL "U:/ECE 241/lab8/tb.vhw" sub00/vhpl02 1490124455
+AR schem behavioral "U:/ECE 241/lab8/schem.vhf" sub00/vhpl04 1490124454

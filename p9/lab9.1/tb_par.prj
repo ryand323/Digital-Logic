@@ -1,0 +1,2 @@
+vhdl work "netgen/par/ccounter_timesim.vhd"
+vhdl work "tb.vhw"

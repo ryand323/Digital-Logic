@@ -1,0 +1,10 @@
+V3 6
+FL "//users.uidaho.edu/users/d/dona1865/ECE 241/lab1.1/lab1.1/schem.vhf" 2017/01/17.12:55:51 J.40
+EN work/schem 1484687834 \
+      FL "//users.uidaho.edu/users/d/dona1865/ECE 241/lab1.1/lab1.1/schem.vhf" \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/schem/BEHAVIORAL 1484687835 \
+      FL "//users.uidaho.edu/users/d/dona1865/ECE 241/lab1.1/lab1.1/schem.vhf" \
+      EN work/schem 1484687834 CP INV
+FL "U:/ECE 241/lab1.1/lab1.1/schem.vhf" 2017/01/17.12:55:51 J.40

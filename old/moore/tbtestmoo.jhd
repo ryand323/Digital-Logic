@@ -1,0 +1,3 @@
+MODULE tbtestmoo
+SUBMODULE mealy
+INSTANCE UUT

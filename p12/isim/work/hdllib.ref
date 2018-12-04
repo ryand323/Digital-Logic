@@ -1,0 +1,4 @@
+AR alu structure "U:/ECE 241/lab12/netgen/par/ALU_timesim.vhd" sub00/vhpl01 1492545651
+AR tb testbench_arch "U:/ECE 241/lab12/tb.vhw" sub00/vhpl03 1492545877
+EN tb NULL "U:/ECE 241/lab12/tb.vhw" sub00/vhpl02 1492545876
+EN alu NULL "U:/ECE 241/lab12/netgen/par/ALU_timesim.vhd" sub00/vhpl00 1492545650

@@ -1,0 +1,23 @@
+V3 21
+FL "U:/ECE 241/counter2/netgen/par/ccounter_timesim.vhd" 2017/03/28.13:09:34 J.40
+EN work/ccounter 1490731777 \
+      FL "U:/ECE 241/counter2/netgen/par/ccounter_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/ccounter/Structure 1490731778 \
+      FL "U:/ECE 241/counter2/netgen/par/ccounter_timesim.vhd" EN work/ccounter 1490731777 \
+      CP X_BUF CP X_OBUF CP X_BUFGMUX CP X_INV CP X_LUT4 CP X_SFF CP X_ONE CP X_ZERO \
+      CP X_ROC CP X_TOC
+FL "U:/ECE 241/counter2/tb.vhw" 2017/03/28.13:04:30 J.40
+EN work/tb 1490731779 FL "U:/ECE 241/counter2/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 1490731780 \
+      FL "U:/ECE 241/counter2/tb.vhw" EN work/tb 1490731779 CP ccounter
+FL "U:/ECE 241/counter2/tbench.vhw" 2017/03/28.13:11:02 J.40
+EN work/tbench 1490731870 FL "U:/ECE 241/counter2/tbench.vhw" \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB std/textio 1194562348
+AR work/tbench/testbench_arch 1490731871 \
+      FL "U:/ECE 241/counter2/tbench.vhw" EN work/tbench 1490731870 CP ccounter

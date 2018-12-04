@@ -1,0 +1,15 @@
+V3 14
+FL "U:/ECE 241/lab7/netgen/par/comparator_timesim.vhd" 2017/03/07.12:49:42 J.40
+EN work/comparator 1488919785 \
+      FL "U:/ECE 241/lab7/netgen/par/comparator_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/comparator/Structure 1488919786 \
+      FL "U:/ECE 241/lab7/netgen/par/comparator_timesim.vhd" EN work/comparator 1488919785 \
+      CP X_OBUF CP X_BUF CP X_LUT4 CP X_ONE CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab7/TB.vhw" 2017/03/07.12:48:51 J.40
+EN work/TB 1488919787 FL "U:/ECE 241/lab7/TB.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/TB/testbench_arch 1488919788 \
+      FL "U:/ECE 241/lab7/TB.vhw" EN work/TB 1488919787 CP comparator

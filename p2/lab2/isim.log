@@ -1,0 +1,42 @@
+ command line:
+   ./tb_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/schem_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63624
+
+Tue Jan 31 12:50:21 2017
+
+Total Line Count : 96
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 154.661 Meg. 
+
+ Total Signals          : 145
+ Total Nets             : 93
+ Total Signal Drivers   : 54
+ Total Blocks           : 49
+ Total Primitive Blocks : 19
+ Total Processes        : 52
+ Total Traceable Variables  : 129
+ Total Scalar Nets and Variables : 440
+ntrace select -o on -n /tb/a0 
+ntrace select -o on -n /tb/a1 
+ntrace select -o on -n /tb/b0 
+ntrace select -o on -n /tb/b1 
+ntrace select -o on -n /tb/a_big 
+ntrace select -o on -n /tb/b_big 
+ntrace select -o on -n /tb/equal 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.078 sec.
+
+ Estimate current memory usage : 163.836 Meg. 
+
+Tue Jan 31 12:51:34 2017
+

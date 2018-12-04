@@ -1,0 +1,6 @@
+V3 3
+FL "U:/ECE 241/lab9/counter.vhd" 2017/03/28.12:05:18 J.40
+EN isim_temp/counter 0 FL "U:/ECE 241/lab9/counter.vhd" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR isim_temp/counter/Behavioral 0 \
+      FL "U:/ECE 241/lab9/counter.vhd" EN isim_temp/counter 0

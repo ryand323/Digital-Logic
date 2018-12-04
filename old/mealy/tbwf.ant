@@ -1,0 +1,190 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : tbwf.ant
+-- /___/   /\     Timestamp : Tue Apr 04 12:57:09 2017
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tbwf
+--Device: Xilinx
+--
+
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tbwf IS
+END tbwf;
+
+ARCHITECTURE testbench_arch OF tbwf IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "\\users.uidaho.edu\users\d\dona1865\ECE 241\mealy\tbwf.ano";
+
+    COMPONENT mealy
+        PORT (
+            CLK : In std_logic;
+            X : In std_logic;
+            Reset : Out std_logic;
+            Y : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL CLK : std_logic := '0';
+    SIGNAL X : std_logic := '0';
+    SIGNAL Reset : std_logic := '0';
+    SIGNAL Y : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 200 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : mealy
+        PORT MAP (
+            CLK => CLK,
+            X => X,
+            Reset => Reset,
+            Y => Y
+        );
+
+        PROCESS    -- clock process for CLK
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                CLK <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                CLK <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Annotation process for CLK
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_Reset(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Reset, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Reset);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Y(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Y, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Y);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_Reset(0);
+            ANNOTATE_Y(0);
+            WAIT for OFFSET;
+            TX_TIME := TX_TIME + 100;
+            ANNO_LOOP : LOOP
+                --Falling Edge
+                WAIT for 15 ns;
+                TX_TIME := TX_TIME + 15;
+                ANNOTATE_Reset(TX_TIME);
+                ANNOTATE_Y(TX_TIME);
+                WAIT for 185 ns;
+                TX_TIME := TX_TIME + 185;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Process for CLK
+            BEGIN
+                WAIT FOR 5200 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+            PROCESS    -- Process for Asynchronous Signals
+                BEGIN
+                    -- -------------  Current Time:  649ns
+                    WAIT FOR 649 ns;
+                    X <= '1';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  1063ns
+                    WAIT FOR 414 ns;
+                    X <= '0';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  1259ns
+                    WAIT FOR 195 ns;
+                    X <= '1';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  1424ns
+                    WAIT FOR 164 ns;
+                    X <= '0';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  1979ns
+                    WAIT FOR 555 ns;
+                    X <= '1';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  2158ns
+                    WAIT FOR 178 ns;
+                    X <= '0';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  2350ns
+                    WAIT FOR 191 ns;
+                    X <= '1';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  2558ns
+                    WAIT FOR 208 ns;
+                    X <= '0';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  2959ns
+                    WAIT FOR 400 ns;
+                    X <= '1';
+                    -- -------------------------------------
+                    -- -------------  Current Time:  3350ns
+                    WAIT FOR 390 ns;
+                    X <= '0';
+                    -- -------------------------------------
+                    WAIT FOR 1849 ns;
+
+                    STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                    STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                    ASSERT (FALSE) REPORT
+                        "Success! Simulation for annotation completed"
+                        SEVERITY FAILURE;
+                END PROCESS;
+
+        END testbench_arch;
+

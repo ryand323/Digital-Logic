@@ -1,0 +1,36 @@
+ command line:
+   ./tb0101_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/alu_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  61748
+
+Tue Apr 25 14:25:33 2017
+
+Total Line Count : 483
+
+ Elaboration time : 0.0156 sec.
+
+ Estimate current memory usage : 156.606 Meg. 
+
+ Total Signals          : 993
+ Total Nets             : 555
+ Total Signal Drivers   : 532
+ Total Blocks           : 304
+ Total Primitive Blocks : 150
+ Total Processes        : 530
+ Total Traceable Variables  : 1232
+ Total Scalar Nets and Variables : 4414
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0468 sec.
+
+ Estimate current memory usage : 161.325 Meg. 
+
+Tue Apr 25 14:26:38 2017
+

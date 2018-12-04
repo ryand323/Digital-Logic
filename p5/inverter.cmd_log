@@ -1,0 +1,12 @@
+xst -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+ngdbuild -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "inverter.ngc" inverter.ngd
+map -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o inverter_map.ncd inverter.ngd inverter.pcf
+par -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -w -intstyle ise -ol std -t 1 inverter_map.ncd inverter.ncd inverter.pcf
+trce -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -e 3 -s 5 -xml inverter inverter.ncd -o inverter.twr inverter.pcf
+bitgen -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -f inverter.ut inverter.ncd
+bitgen -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -f inverter.ut inverter.ncd
+ngdbuild -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -dd _ngo -nt timestamp -uc "inverter.ucf" -p xc3s100e-cp132-5 "inverter.ngc" inverter.ngd
+map -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr b -k 4 -c 100 -o inverter_map.ncd inverter.ngd inverter.pcf
+par -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -w -intstyle ise -ol std -t 1 inverter_map.ncd inverter.ncd inverter.pcf
+trce -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -e 3 -s 5 -xml inverter inverter.ncd -o inverter.twr inverter.pcf -ucf inverter.ucf
+bitgen -ise "U:/ECE 241/New folder/lab_5/lab_5.ise" -intstyle ise -f inverter.ut inverter.ncd

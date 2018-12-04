@@ -1,0 +1,8 @@
+//! **************************************************************************
+// Written by: Map J.40 on Tue Jan 17 13:17:38 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "my_out" LOCATE = SITE "G1" LEVEL 1;
+COMP "my_in" LOCATE = SITE "N3" LEVEL 1;
+SCHEMATIC END;

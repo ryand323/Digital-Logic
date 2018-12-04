@@ -1,0 +1,13 @@
+V3 21
+FL $XILINX/verilog/src/glbl.v 2007/05/18.13:22:56 J.40
+FL "U:/ECE 241/lab 4/lab_4/netgen/par/schem_timesim.v" 2017/02/14.13:24:23 J.40
+MO work/schem FL "U:/ECE 241/lab 4/lab_4/netgen/par/schem_timesim.v" MI X_BUF \
+      MI X_INV MI X_IPAD MI X_LUT4 MI X_OBUF MI X_ONE MI X_OPAD
+MO work/glbl \
+      FL "U:/ECE 241/lab 4/lab_4/netgen/par/schem_timesim.v"
+FL "U:/ECE 241/lab 4/lab_4/schem.vf" 2017/02/14.13:23:27 J.40
+MO work/OR6_MXILINX_schem FL "U:/ECE 241/lab 4/lab_4/schem.vf" MI FMAP MI OR3 MI OR4
+FL "U:/ECE 241/lab 4/lab_4/tb.tfw" 2017/02/14.13:24:25 J.40
+MO work/tb FL "U:/ECE 241/lab 4/lab_4/tb.tfw" MI schem
+FL "U:/ECE 241/lab 4/lab_4/TB2.tfw" 2017/02/14.13:22:20 J.40
+MO work/TB2 FL "U:/ECE 241/lab 4/lab_4/TB2.tfw" MI schem

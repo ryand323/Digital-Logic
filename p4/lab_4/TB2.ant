@@ -1,0 +1,164 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2.04i
+//  \   \         Application : ISE
+//  /   /         Filename : TB2.ant
+// /___/   /\     Timestamp : Tue Feb 14 13:22:20 2017
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: TB2
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module TB2;
+    reg in_0 = 1'b0;
+    reg in_1 = 1'b0;
+    reg in_2 = 1'b0;
+    reg in_3 = 1'b0;
+    wire lil_a;
+    wire lil_b;
+    wire lil_c;
+    wire lil_d;
+    wire lil_e;
+    wire lil_f;
+    wire lil_g;
+
+
+    schem UUT (
+        .in_0(in_0),
+        .in_1(in_1),
+        .in_2(in_2),
+        .in_3(in_3),
+        .lil_a(lil_a),
+        .lil_b(lil_b),
+        .lil_c(lil_c),
+        .lil_d(lil_d),
+        .lil_e(lil_e),
+        .lil_f(lil_f),
+        .lil_g(lil_g));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process
+        #0;
+        ANNOTATE_lil_a;
+        ANNOTATE_lil_b;
+        ANNOTATE_lil_c;
+        ANNOTATE_lil_d;
+        ANNOTATE_lil_e;
+        ANNOTATE_lil_f;
+        ANNOTATE_lil_g;
+        forever begin
+            #50;
+            ANNOTATE_lil_a;
+            ANNOTATE_lil_b;
+            ANNOTATE_lil_c;
+            ANNOTATE_lil_d;
+            ANNOTATE_lil_e;
+            ANNOTATE_lil_f;
+            ANNOTATE_lil_g;
+            #50;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("\\\\users.uidaho.edu\\users\\d\\dona1865\\ECE 241\\lab 4\\lab_4\\TB2.ano");
+        #1000 // Final time:  1000 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  200ns
+        #200;
+        in_0 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  300ns
+        #100;
+        in_0 = 1'b0;
+        in_1 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  400ns
+        #100;
+        in_0 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  500ns
+        #100;
+        in_0 = 1'b0;
+        in_1 = 1'b0;
+        in_2 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  600ns
+        #100;
+        in_3 = 1'b1;
+    end
+
+    task ANNOTATE_lil_a;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_a,%b]", $time, lil_a);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_b;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_b,%b]", $time, lil_b);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_c;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_c,%b]", $time, lil_c);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_d;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_d,%b]", $time, lil_d);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_e;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_e,%b]", $time, lil_e);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_f;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_f,%b]", $time, lil_f);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_lil_g;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,lil_g,%b]", $time, lil_g);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

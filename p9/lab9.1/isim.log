@@ -1,0 +1,39 @@
+ command line:
+   ./tbench_isim_par.exe
+     -sdfmax  /UUT/=netgen/par/ccounter_timesim.sdf
+     -sdfroot  /UUT
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  52691
+
+Tue Mar 28 13:11:13 2017
+
+Total Line Count : 133
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 155.333 Meg. 
+
+ Total Signals          : 257
+ Total Nets             : 169
+ Total Signal Drivers   : 149
+ Total Blocks           : 74
+ Total Primitive Blocks : 32
+ Total Processes        : 150
+ Total Traceable Variables  : 325
+ Total Scalar Nets and Variables : 915
+ntrace select -o on -n /tbench/clk 
+ntrace select -o on -n /tbench/reset 
+ntrace select -o on -n /tbench/updown 
+ntrace select -o on -n /tbench/count 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0936 sec.
+
+ Estimate current memory usage : 164.508 Meg. 
+
+Tue Mar 28 13:12:33 2017
+

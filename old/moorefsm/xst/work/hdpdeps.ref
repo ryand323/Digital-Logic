@@ -1,0 +1,10 @@
+V3 10
+FL "//users.uidaho.edu/users/d/dona1865/ECE 241/moorefsm/schematic.vhf" 2017/04/04.13:27:58 J.40
+EN work/schematic 1491337820 \
+      FL "//users.uidaho.edu/users/d/dona1865/ECE 241/moorefsm/schematic.vhf" \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/schematic/BEHAVIORAL 1491337821 \
+      FL "//users.uidaho.edu/users/d/dona1865/ECE 241/moorefsm/schematic.vhf" \
+      EN work/schematic 1491337820 CP FDR CP INV CP OR2 CP AND3 CP AND2
+FL "U:/ECE 241/moorefsm/schematic.vhf" 2017/04/04.13:27:58 J.40

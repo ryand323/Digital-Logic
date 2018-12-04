@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : tb.ant
+-- /___/   /\     Timestamp : Tue Jan 31 12:33:41 2017
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tb
+--Device: Xilinx
+--
+
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tb IS
+END tb;
+
+ARCHITECTURE testbench_arch OF tb IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "\\users.uidaho.edu\users\d\dona1865\ECE 241\lab 2\lab2\tb.ano";
+
+    COMPONENT schem
+        PORT (
+            A0 : In std_logic;
+            A1 : In std_logic;
+            B0 : In std_logic;
+            B1 : In std_logic;
+            A_big : Out std_logic;
+            B_big : Out std_logic;
+            Equal : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL A0 : std_logic := '0';
+    SIGNAL A1 : std_logic := '0';
+    SIGNAL B0 : std_logic := '0';
+    SIGNAL B1 : std_logic := '0';
+    SIGNAL A_big : std_logic := '0';
+    SIGNAL B_big : std_logic := '0';
+    SIGNAL Equal : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : schem
+        PORT MAP (
+            A0 => A0,
+            A1 => A1,
+            B0 => B0,
+            B1 => B1,
+            A_big => A_big,
+            B_big => B_big,
+            Equal => Equal
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_A_big(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", A_big, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, A_big);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_B_big(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", B_big, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, B_big);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Equal(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Equal, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Equal);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_A_big(0);
+            ANNOTATE_B_big(0);
+            ANNOTATE_Equal(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_A_big(TX_TIME);
+                ANNOTATE_B_big(TX_TIME);
+                ANNOTATE_Equal(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  300ns
+                WAIT FOR 300 ns;
+                A0 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 100 ns;
+                A0 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  600ns
+                WAIT FOR 200 ns;
+                B0 <= '1';
+                B1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  700ns
+                WAIT FOR 100 ns;
+                B0 <= '0';
+                B1 <= '0';
+                -- -------------------------------------
+                WAIT FOR 300 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

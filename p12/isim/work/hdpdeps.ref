@@ -1,0 +1,14 @@
+V3 15
+FL "U:/ECE 241/lab12/netgen/par/ALU_timesim.vhd" 2017/04/18.13:00:48 J.40
+EN work/ALU 1492545650 FL "U:/ECE 241/lab12/netgen/par/ALU_timesim.vhd" \
+      PB ieee/std_logic_1164 1194562354 LB SIMPRIM PH simprim/VCOMPONENTS 1194563037 \
+      PB simprim/VPACKAGE 1194563043
+AR work/ALU/Structure 1492545651 \
+      FL "U:/ECE 241/lab12/netgen/par/ALU_timesim.vhd" EN work/ALU 1492545650 \
+      CP X_BUF CP X_OBUF CP X_MUX2 CP X_LUT4 CP X_ONE CP X_ROC CP X_TOC
+FL "U:/ECE 241/lab12/tb.vhw" 2017/04/18.13:04:29 J.40
+EN work/tb 1492545876 FL "U:/ECE 241/lab12/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 1492545877 \
+      FL "U:/ECE 241/lab12/tb.vhw" EN work/tb 1492545876 CP ALU

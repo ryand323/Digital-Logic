@@ -1,0 +1,12 @@
+V3 7
+FL "U:/ECE 241/lab9/counter.vhd" 2017/03/28.12:23:53 J.40
+EN work/counter 1490729056 FL "U:/ECE 241/lab9/counter.vhd" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR work/counter/Behavioral 1490729057 \
+      FL "U:/ECE 241/lab9/counter.vhd" EN work/counter 1490729056
+FL "U:/ECE 241/lab9/tb.vhw" 2017/03/28.12:01:34 J.40
+EN work/tb 0 FL "U:/ECE 241/lab9/tb.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/tb/testbench_arch 0 \
+      FL "U:/ECE 241/lab9/tb.vhw" EN work/tb 0 CP counter
